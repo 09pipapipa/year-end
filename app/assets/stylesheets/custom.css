@@ -1,4 +1,8 @@
-  
+  /* header部分 */
+.top-login {
+  margin-right: 20px;
+}
+
   /* ログイン部分 */
 
 .login-h1 {
@@ -36,3 +40,4 @@
 .sign-in:hover {
   opacity: 0.8;
 }
+
