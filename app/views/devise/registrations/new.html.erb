@@ -1,29 +1,27 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<%= render "devise/shared/header" %>
+<form>
+  <h1 class="login-h1">新規登録</h1>
+  <div class="row mb-3">
+    <label for="store_name" class="label-change">店舗名</label>
+    <input type="text" class="form-change form-control" id="store_name">
   </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+  <div class="row mb-3">
+    <label for="store_no" class="label-change">店舗ナンバー</label>
+    <input type="number" class="form-change form-control" id="store_no" placeholder= "現在の店舗Noを半角英数字で入力">
   </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="label-change">メールアドレス</label>
+    <input type="email" class="form-change form-control" id="inputEmail3" placeholder="店舗用アドレスを入力">
   </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="row mb-3">
+    <label for="password" class="label-change">パスワード(6文字以上)</label>
+    <input type="password" class="form-change form-control" id="password" placeholder="6文字以上の半角英数字">
   </div>
-<% end %>
+  <div class="row mb-3">
+    <label for="password_confirmation" class="label-change">確認のため再度パスワードを入力</label>
+    <input type="password" class="form-change form-control" id="password_confirmation" placeholder="同じパスワードを入力してください">
+  </div>
+  <button type="submit" class="sign-in" >新規登録</button>
+</form>
 
-<%= render "devise/shared/links" %>
+
