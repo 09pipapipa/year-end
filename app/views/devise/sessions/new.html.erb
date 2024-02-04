@@ -1,15 +1,13 @@
 <%= render "devise/shared/header" %>
-<form>
+<%= form_with model: @user,url: user_session_path,local:true do |f| %>
   <h1 class="login-h1">ログイン</h1>
-  <div class="row mb-3">
     <label for="inputEmail3" class="label-change">メールアドレス</label>
-    <input type="email" class="form-change form-control" id="inputEmail3" placeholder="店舗用アドレスを入力">
+    <%= f.email_field :email, class: "form-change form-control", id: "inputEmail3",placeholder: "店舗用アドレスを入力", autofocus:true %>
   </div>
   <div class="row mb-3">
     <label for="password" class="label-change">パスワード(6文字以上)</label>
-    <input type="password" class="form-change form-control" id="password" placeholder="6文字以上の半角英数字">
+    <%= f.password_field :password, class: "form-change form-control", id: "password", placeholder: "6文字以上の半角英数字" %>
   </div>
-  <button type="submit" class="sign-in" >ログイン</button>
-</form>
-
+  <%= f.submit "ログイン", class: "sign-in" %>
+<% end %>
 
