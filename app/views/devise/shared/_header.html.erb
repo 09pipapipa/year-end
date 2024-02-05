@@ -1,12 +1,17 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">年末商戦データ入力</a>
+    <%= link_to "年末商戦データ入力", class:"navbar-brand" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
       <form class="d-flex" role="search">
-        <button class="top-login btn btn-outline-success" type="submit">ログイン</button>
-        <button class="top-signin btn btn-outline-success" type="submit">新規登録</button>
+        <% if user_signed_in? %>
+          <%= link_to current_user.store_name, user_path(current_user),class: "top-login btn btn-outline-success" %>
+          <%= link_to "ログアウト", destroy_user_session_path,data:{turbo_method: :delete}, class:"top-signin btn btn-outline-success" %>
+        <%else%>
+          <%= link_to "ログイン", new_user_session_path, class:"top-login btn btn-outline-success" %>
+          <%= link_to "新規登録", new_user_registration_path, class:"top-signin btn btn-outline-success" %>
+        <% end %>
       </form>
     </div>
   </div>
