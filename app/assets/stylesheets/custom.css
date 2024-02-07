@@ -1,0 +1,43 @@
+  /* header部分 */
+.top-login {
+  margin-right: 20px;
+}
+
+  /* ログイン部分 */
+
+.login-h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+.form-change {
+  width: 600px;
+  height: 50px;
+  margin: auto ;
+  margin-bottom: 30px;
+}
+
+.custom-label{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sign-in {
+  width: 600px;
+  height: 50px;
+  border: 1px solid rgb(233, 220, 220);
+  border-radius: 7px;
+  font-size:16px;
+  font-family: sans-serif;
+  background-color: aqua;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: beige;
+}
+
+.sign-in:hover {
+  opacity: 0.8;
+}
+
