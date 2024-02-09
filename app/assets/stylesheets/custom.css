@@ -84,3 +84,11 @@
   width: 300px;
   margin:10px 0  50px 0;
 }
+
+/* 登録画面 */
+
+.two-segmentation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
