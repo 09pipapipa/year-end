@@ -9,6 +9,8 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.string   :weather_id            ,null:false
       t.string   :expansion_method_id   ,null:false
       t.string   :sales_number_id       ,null:false
+      t.string   :stock_out_id          ,null:false
+      t.string   :sales_day_id          ,null:false
       t.text     :expansion_description 
 
       t.timestamps

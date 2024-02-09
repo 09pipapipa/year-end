@@ -20,6 +20,8 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_09_050337) do
     t.string "weather_id", null: false
     t.string "expansion_method_id", null: false
     t.string "sales_number_id", null: false
+    t.string "stock_out_id", null: false
+    t.string "sales_day_id", null: false
     t.text "expansion_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
