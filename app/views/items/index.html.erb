@@ -1,1 +1,38 @@
 <%= render "devise/shared/header" %>
+<div class="main">
+  <h2 class="daily-period">
+    29日~31日日替わり商品
+  </h2>
+  <ul class="daily-product">
+    <li class="product-easy">
+      <%= image_tag "image001.jpg", class: "img-thumbnail daily-item",alt: "img-thumbnail" %>
+      <ul class="list-group top-list">
+        <li class="list-group-item custom-item">商品名: ゴールドブレンド</li>
+        <li class="list-group-item custom-item">JANコード: 4987654321</li>
+      </ul>
+      <%= link_to "登録する", "#", class: "btn btn-primary btn-lg moving_button" %>
+    </li>
+        <li class="product-easy">
+      <%= image_tag "image002.jpg", class: "img-thumbnail daily-item",alt: "img-thumbnail" %>
+      <ul class="list-group top-list">
+        <li class="list-group-item custom-item">商品名: ゴールドブレンド</li>
+        <li class="list-group-item custom-item">JANコード: 4987654321</li>
+      </ul>
+      <%= link_to "登録する", "#", class: "btn btn-primary btn-lg moving_button" %>
+    </li>
+  </ul>
+  <h2 class="daily-period">
+    年末際物商品
+  </h2>
+  <ul class="daily-product">
+    <li class="product-easy">
+      <%= image_tag "image001.jpg", class: "img-thumbnail daily-item",alt: "img-thumbnail" %>
+      <ul class="list-group top-list">
+        <li class="list-group-item custom-item">商品名: ゴールドブレンド</li>
+        <li class="list-group-item custom-item">JANコード: 4987654321</li>
+      </ul>
+      <%= link_to "登録する", "#", class: "btn btn-primary btn-lg moving_button" %>
+    </li>
+  </ul>
+
+</div>
