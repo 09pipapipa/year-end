@@ -1,29 +1,36 @@
 <%= render "devise/shared/header" %>
 <div class="main">
   <div class="two-segmentation">
-    <div class="left-selection">
-      <label for="formFile" class="form-label">Default file input</label>
-      <input class="form-control" type="file" id="formFile">
-      <label for="formFile" class="form-label">Default file input</label>
-      <input class="form-control" type="file" id="formFile">
+    <div class="one-selection">
+      <label for="formFile" class="form-label">撮影画像を選択</label>
+      <input class="form-control image-selection" type="file" id="formFile">
       <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
-        <label for="floatingTextarea">Comments</label>
+        <textarea class="form-control comment-selection" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+        <label for="floatingTextarea">販売の動向、補充者、補充頻度など</label>
+        <button type="button" class="item-new-btn btn btn-outline-primary">登録する</button>
       </div>
     </div>
-    <div class="right-selection">
+    <div class="twe-selection">
       <div class="d-grid gap-3">
-        <div class="p-2 bg-light border ">担当者</div>
-        <div class="p-2 bg-light border ">発注数</div>
-        <div class="p-2 bg-light border ">販売数</div>
-        <div class="p-2 bg-light border ">販売年</div>
-        <div class="p-2 bg-light border ">展開場所</div>
-        <div class="p-2 bg-light border ">展開方法</div>
-        <div class="p-2 bg-light border ">欠品の有無</div>
-        <div class="p-2 bg-light border ">特売日</div>
-        <div class="p-2 bg-light border ">天気</div>
+        <label for="responsible_person" class="data-name">担当者</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:responsible_person">
+        <label for="order_quantity" class="data-name">発注数</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:order_quantity">
+        <label for="sales_number" class="data-name">販売数</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:sales_number">
+        <label for="year_id" class="data-name">販売年</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:year_id">
+        <label for="expansion_location_id" class="data-name">展開場所</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:expansion_location_id">
+        <label for="expansion_method_id" class="data-name">展開方法</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:expansion_method_id">
+        <label for="stock_out_id" class="data-name">欠品の有無</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:stock_out_id">
+        <label for="sales_number_id" class="data-name">特売日</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:sales_number_id">
+        <label for="weather_id" class="data-name">天気</label>
+        <input type="text" class="data-selection p-2 bg-light border, id:weather_id">
       </div>
     </div>
   </div>
-  <div>登録する</div>
 </div>

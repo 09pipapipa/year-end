@@ -10,7 +10,6 @@ class Item < ApplicationRecord
   with_options presence: true do
     validates :responsible_person
     validates :order_quantity
-    validates :sales_number
     validates :year_id,               numericality: {other_than: 1}
     validates :expansion_location_id ,numericality: {other_than: 1}
     validates :weather_id            ,numericality: {other_than: 1}
