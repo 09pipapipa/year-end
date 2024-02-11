@@ -101,11 +101,15 @@
 .right-selection {
 
 }
-
+.data-name {
+  font-size: 16px;
+}
 .data-selection {
   width: 350px;
-  border: 1px solid;
+  border: 1px solid black;
   border-radius: 5px;
+  color:black;
+  opacity: 0.3;
 }
 
 .image-selection {
@@ -126,4 +130,5 @@
   left: 50%;
   transform: translate(-50%,0);
   margin: 30px 0 30px 0;
+  
 }
