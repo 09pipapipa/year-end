@@ -18,6 +18,7 @@ class Item < ApplicationRecord
     validates :stock_out_id          ,numericality: {other_than: 1}
     validates :sales_number_id       ,numericality: {other_than: 1}
   end
+  validates :expansion_description
 
 
 end
