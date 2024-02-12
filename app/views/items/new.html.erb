@@ -10,6 +10,10 @@
           <%= f.text_area :expansion_description, class:"form-control comment-selection",id:"floatingTextarea",style:"height: 100px" %>
           <label for="floatingTextarea">販売の動向、補充者、補充頻度など</label>
           <%= f.submit "登録する", class:"item-new-btn btn btn-outline-primary" %>
+          
+        </div>
+        <div>
+          <%= link_to "戻る",root_path,class:"item-back-btn btn btn-secondary" %>
         </div>
       </div>
       <div class="twe-selection">
@@ -21,17 +25,17 @@
           <label for="sales_number" class="data-name">販売数</label>
           <%= f.text_field :sales_number, class:"data-selection p-2 bg-light border",id:"sales_number" %>
           <label for="year_id" class="data-name">販売年</label>
-          <%= f.collection_select(:year_id, Year.all,:id,:name,class:"data-selection p-2 bg-light border",id:"year_id" ) %>
+          <%= f.collection_select(:year_id, Year.all,:id,:name, {},{class:"data-selection p-2 bg-light border",id:"year_id"} ) %>
           <label for="expansion_location_id" class="data-name">展開場所</label>
-          <%= f.collection_select(:expansion_location_id, ExpansionLocation.all,:id,:name,class:"data-selection p-2 bg-light border",id:"expansion_location_id" ) %>
+          <%= f.collection_select(:expansion_location_id, ExpansionLocation.all,:id,:name,{},{class:"data-selection p-2 bg-light border",id:"expansion_location_id"}) %>
           <label for="expansion_method_id" class="data-name">展開方法</label>
-          <%= f.collection_select(:expansion_method_id, ExpansionMethod.all,:id,:name,class:"data-selection p-2 bg-light border",id:"expansion_method_id" ) %>
+          <%= f.collection_select(:expansion_method_id, ExpansionMethod.all,:id,:name,{},{class:"data-selection p-2 bg-light border",id:"expansion_method_id"} ) %>
           <label for="stock_out_id" class="data-name">欠品の有無</label>
-          <%= f.collection_select(:stock_out_id, StockOut.all,:id,:name,class:"data-selection p-2 bg-light border",id:"stock_out_id" ) %>
+          <%= f.collection_select(:stock_out_id, StockOut.all,:id,:name,{},{class:"data-selection p-2 bg-light border",id:"stock_out_id"} ) %>
           <label for="sales_number_id" class="data-name">特売日</label>
-          <%= f.collection_select(:sales_day_id, SalesDay.all,:id,:name,class:"data-selection p-2 bg-light border",id:"sales_day_id" ) %>
+          <%= f.collection_select(:sales_day_id, SalesDay.all,:id,:name,{},{class:"data-selection p-2 bg-light border",id:"sales_day_id"} ) %>
           <label for="weather_id" class="data-name">天気</label>
-          <%= f.collection_select(:weather_id, Weather.all,:id,:name,class:"data-selection p-2 bg-light border",id:"weather_id" ) %>
+          <%= f.collection_select(:weather_id, Weather.all,:id,:name,{},{class:"data-selection p-2 bg-light border",id:"weather_id"} ) %>
         </div>
       </div>
     </div>
