@@ -1,5 +1,6 @@
 class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
+  has_one_attached:image
   belongs_to :expansion_location
   belongs_to :expansion_method
   belongs_to :weather
