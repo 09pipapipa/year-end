@@ -12,12 +12,11 @@ class Item < ApplicationRecord
     validates :order_quantity
     validates :year_id,               numericality: {other_than: 1}
     validates :expansion_location_id ,numericality: {other_than: 1}
-    validates :weather_id            ,numericality: {other_than: 1}
-    validates :expansion_method_id   ,numericality: {other_than: 1}
-    validates :stock_out_id          ,numericality: {other_than: 1}
-    validates :sales_number_id       ,numericality: {other_than: 1}
+    validates :weather_id,            numericality: {other_than: 1}
+    validates :expansion_method_id,   numericality: {other_than: 1}
+    validates :stock_out_id,          numericality: {other_than: 1}
+    validates :sales_number_id,       numericality: {other_than: 1}
   end
-  validates :expansion_description
 
 
 end
