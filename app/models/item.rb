@@ -6,17 +6,19 @@ class Item < ApplicationRecord
   belongs_to :weather
   belongs_to :year
   belongs_to :stock_out
-  belongs_to :sales_number
+  belongs_to :sales_day
 
   with_options presence: true do
+    validates :product_name
     validates :responsible_person
     validates :order_quantity
+    validates :sales_number
     validates :year_id,               numericality: {other_than: 1}
     validates :expansion_location_id ,numericality: {other_than: 1}
     validates :weather_id,            numericality: {other_than: 1}
     validates :expansion_method_id,   numericality: {other_than: 1}
     validates :stock_out_id,          numericality: {other_than: 1}
-    validates :sales_number_id,       numericality: {other_than: 1}
+    validates :sales_day_id,          numericality: {other_than: 1}
   end
 
 

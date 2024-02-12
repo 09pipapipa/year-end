@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_12_020223) do
   end
 
   create_table "items", charset: "utf8", force: :cascade do |t|
+    t.string "product_name", null: false
     t.string "responsible_person", null: false
     t.integer "order_quantity", null: false
     t.integer "sales_number", null: false
@@ -47,7 +48,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_12_020223) do
     t.string "expansion_location_id", null: false
     t.string "weather_id", null: false
     t.string "expansion_method_id", null: false
-    t.string "sales_number_id", null: false
     t.string "stock_out_id", null: false
     t.string "sales_day_id", null: false
     t.text "expansion_description"
