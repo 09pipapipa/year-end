@@ -5,23 +5,23 @@
     <div class="two-segmentation">
       <div class="one-selection">
         <label for="formFile" class="form-label">撮影画像を選択</label>
-        <input class="form-control image-selection" type="file" id="formFile">
+        <%= f.file_field :image, id:"formFile",class:"form-control image-selection" %>
         <div class="form-floating">
-          <textarea class="form-control comment-selection" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+          <%= f.text_area :expansion_description, class:"form-control comment-selection",id:"floatingTextarea",style:"height: 100px" %>
           <label for="floatingTextarea">販売の動向、補充者、補充頻度など</label>
-          <button type="button" class="item-new-btn btn btn-outline-primary">登録する</button>
+          <%= f.submit "登録する", class:"item-new-btn btn btn-outline-primary" %>
         </div>
       </div>
       <div class="twe-selection">
         <div class="d-grid gap-3">
           <label for="responsible_person" class="data-name">担当者</label>
-          <input type="text" class="data-selection p-2 bg-light border, id:responsible_person">
+          <%= f.text_field :responsible_person, class:"data-selection p-2 bg-light border",id:"responsible_person" %>
           <label for="order_quantity" class="data-name">発注数</label>
-          <input type="text" class="data-selection p-2 bg-light border, id:order_quantity">
+          <%= f.text_field :order_quantity, class:"data-selection p-2 bg-light border",id:"order_quantity" %>
           <label for="sales_number" class="data-name">販売数</label>
-          <input type="text" class="data-selection p-2 bg-light border, id:sales_number">
+          <%= f.text_field :sales_number, class:"data-selection p-2 bg-light border",id:"sales_number" %>
           <label for="year_id" class="data-name">販売年</label>
-          <input type="text" class="data-selection p-2 bg-light border, id:year_id">
+          <%= f.collecction_select(:year_id, Year.all,:id,:name,class:"data-selection p-2 bg-light border",id:"year_id" ) %>
           <label for="expansion_location_id" class="data-name">展開場所</label>
           <input type="text" class="data-selection p-2 bg-light border, id:expansion_location_id">
           <label for="expansion_method_id" class="data-name">展開方法</label>
