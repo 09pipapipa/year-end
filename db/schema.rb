@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_12_020223) do
   end
 
   create_table "items", charset: "utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
     t.string "product_name", null: false
     t.string "responsible_person", null: false
     t.integer "order_quantity", null: false
@@ -53,6 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_12_020223) do
     t.text "expansion_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "users", charset: "utf8", force: :cascade do |t|
@@ -71,4 +73,5 @@ ActiveRecord::Schema[7.0].define(version: 2024_02_12_020223) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "items", "users"
 end
