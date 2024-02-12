@@ -1,6 +1,8 @@
 class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   has_one_attached:image
+
+  belongs_to :user
   belongs_to :expansion_location
   belongs_to :expansion_method
   belongs_to :weather
@@ -9,6 +11,7 @@ class Item < ApplicationRecord
   belongs_to :sales_day
 
   with_options presence: true do
+    validates :image
     validates :product_name
     validates :responsible_person
     validates :order_quantity
