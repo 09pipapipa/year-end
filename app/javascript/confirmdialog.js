@@ -1,11 +1,11 @@
-var register = document.getElementById('register')
-
-register.addEventListener('click',function(){
-  var result = window.confirm('クリック');
-
-  if (result) {
-    //trueの処理
-  } else {
-    //falseの処理
+document.addEventListener('DOMContentLoaded', function() {
+  var register = document.getElementById('register');
+  if (register) { 
+    register.addEventListener('click', function(event) {
+      var result = window.confirm('選択ミスはありませんか？');
+      if (!result) {
+        event.preventDefault(); 
+      }
+    });
   }
-})
+});
