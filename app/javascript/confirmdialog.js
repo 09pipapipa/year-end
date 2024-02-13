@@ -1,6 +1,6 @@
-var register_button = document.getElementById('register-button')
+var register = document.getElementById('register')
 
-register_button.addEventListener('click',function(){
+register.addEventListener('click',function(){
   var result = window.confirm('クリック');
 
   if (result) {
