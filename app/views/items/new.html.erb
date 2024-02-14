@@ -1,9 +1,10 @@
 <%= render "devise/shared/header" %>
 
 <div class="main">
-  <%= form_with model:@item, url: items_path, local: true do |f| %>
+  <%= form_with model:@item, url: items_path, local: true, id: "item_form" do |f| %>
     <div class="two-segmentation">
       <div class="one-selection">
+        <div id="previews"></div>
         <label for="formFile" class="form-label">撮影画像を選択</label>
         <%= f.file_field :image, id:"formFile",class:"form-control image-selection" %>
         <div class="form-floating">
