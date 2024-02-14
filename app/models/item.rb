@@ -14,8 +14,8 @@ class Item < ApplicationRecord
     validates :image
     validates :product_name
     validates :responsible_person
-    validates :order_quantity
-    validates :sales_number
+    validates :order_quantity , format: { with: /\A\d+\z/ }
+    validates :sales_number, format: { with: /\A\d+\z/ }
     validates :year_id,               numericality: {other_than: 1}
     validates :expansion_location_id ,numericality: {other_than: 1}
     validates :weather_id,            numericality: {other_than: 1}
