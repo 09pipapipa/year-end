@@ -1,1 +1,81 @@
-<h1>ページroot確認</h1>
+<div class="main">
+  <div class="show-container">
+    <div class="text-primary">
+      <p class="show-text text-primary">2023年 販売商品</p>
+        <% @items.each do |item| %>
+          <% if item.year_id == 1 %>
+            <%= link_to "#" do %>
+              <%= image_tag item.image,class:"thumbnail-custom img-thumbnail",alt:"img-thumbnail", width: 300, height: 300 %>
+              <div class="custom-productname container">Max </div>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="text-primary">
+      <p class="show-text text-primary">2024年 販売商品</p>
+        <% @items.each do |item| %>
+          <% if item.year_id == 2 %>
+            <%= link_to "#" do %>
+              <%= image_tag item.image,class:"thumbnail-custom img-thumbnail",alt:"img-thumbnail", width: 300, height: 300 %>
+              <div class="custom-productname container">Max </div>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="text-primary">
+      <p class="show-text text-primary">2025年 販売商品</p>
+        <% @items.each do |item| %>
+          <% if item.year_id == 3 %>
+            <%= link_to "#" do %>
+              <%= image_tag item.image,class:"thumbnail-custom img-thumbnail",alt:"img-thumbnail", width: 300, height: 300 %>
+              <div class="custom-productname container">Max </div>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="text-primary">
+      <p class="show-text text-primary">2026年 販売商品</p>
+        <% @items.each do |item| %>
+          <% if item.year_id == 4 %>
+            <%= link_to "#" do %>
+              <%= image_tag item.image,class:"thumbnail-custom img-thumbnail",alt:"img-thumbnail", width: 300, height: 300 %>
+              <div class="custom-productname container">Max </div>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="text-primary">
+      <p class="show-text text-primary">2027年 販売商品</p>
+        <% @items.each do |item| %>
+          <% if item.year_id == 5 %>
+            <%= link_to "#" do %>
+              <%= image_tag item.image,class:"thumbnail-custom img-thumbnail",alt:"img-thumbnail", width: 300, height: 300 %>
+              <div class="custom-productname container">Max </div>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="text-primary">
+      <p class="show-text text-primary">2028年 販売商品</p>
+        <% @items.each do |item| %>
+          <% if item.year_id == 6 %>
+            <%= link_to "#" do %>
+              <%= image_tag item.image,class:"thumbnail-custom img-thumbnail",alt:"img-thumbnail", width: 300, height: 300 %>
+              <div class="custom-productname container">Max </div>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+    <div class="text-primary">
+      <p class="show-text text-primary">2029年 販売商品</p>
+        <% @items.each do |item| %>
+          <% if item.year_id == 7 %>
+            <%= link_to "#" do %>
+              <%= image_tag item.image,class:"thumbnail-custom img-thumbnail",alt:"img-thumbnail", width: 300, height: 300 %>
+              <div class="custom-productname container">Max </div>
+            <% end %>
+          <% end %>
+        <% end %>
+    </div>
+  </div>
+</div>
