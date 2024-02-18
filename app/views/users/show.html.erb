@@ -5,8 +5,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <%= search_form_for @q, url: users_path  do |f| %>
+          <%= f.text_field :product_name_cont,class:"form-control me-2", placeholder: 'Search', arialabel: "Search" %>
+          <%= f.submit 'Search', class:"btn btn-outline-success", type: "submit" %>
+        <% end %>
       </form>
     </div>
   </div>
