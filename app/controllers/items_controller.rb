@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    @item = Item.all
+    @items = Item.all
   end
 
   def new
@@ -20,7 +20,6 @@ class ItemsController < ApplicationController
   def destroy
     
   end
-
   private
 
   def item_params

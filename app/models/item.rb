@@ -24,5 +24,13 @@ class Item < ApplicationRecord
     validates :sales_day_id,          numericality: {other_than: 1}
   end
 
+  def self.ransackable_attributes(auth_object = nil)
+    [ "product_name","year_id"]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    ["user", "expansion_location", "expansion_method", "weather", "year", "stock_out", "sales_day"]
+  end
+
 
 end

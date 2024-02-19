@@ -10,4 +10,8 @@ class User < ApplicationRecord
   validates :store_name, presence: true, length: { maximum: 10 }
   validates :store_no,   presence: true, numericality: { only_integer: true }, length: { is: 3 }
   validates :password,   presence: true, format: { with: /\A(?=.*[a-zA-Z])(?=.*\d)/ }, length: { minimum: 6 }
+
+  def self.ransackable_attributes(auth_object = nil)
+    ["product_name","year_id"]
+  end
 end
