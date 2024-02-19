@@ -1,1 +1,79 @@
-<h1>確認用</h1>
+<div class="main">
+  <div class="information-box">
+    <div class="image-information">
+      <%= image_tag @item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 400, height: 400 %>
+      <div>
+        <%= @item.expansion_description %>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn-primary"></button>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn-outline-danger"></button>
+      </div>
+    </div>
+    <div class="item-information">
+      <table class="custom-table table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Data Name</th>
+            <th scope="col">Registration Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>商品名</td>
+            <td><%= @item.product_name %></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>担当者</td>
+            <td><%= @item.responsible_person %></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>発注数</td>
+            <td><%= @item.order_quantity %></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>販売数</td>
+            <td><%= @item.sales_number %></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>販売年</td>
+            <td><%= "#{@item.year.name}年" %></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>展開場所</td>
+            <td><%= @item.expansion_location.name %></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>展開方法</td>
+            <td><%= @item.expansion_method.name %></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>欠品の有無</td>
+            <td><%= @item.stock_out.name %></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>特売日</td>
+            <td><%= @item.sales_day.name %></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>天気</td>
+            <td><%= @item.weather.name %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
