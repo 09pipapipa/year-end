@@ -6,7 +6,7 @@
     </button>
       <form class="d-flex" role="search">
         <%= search_form_for @q, url: users_path  do |f| %>
-          <%= f.text_field :product_name_cont,class:"form-control me-2", placeholder: 'Search', arialabel: "Search" %>
+          <%= f.text_field :product_name ,class:"form-control me-2", placeholder: 'Search', arialabel: "Search" %>
           <%= f.submit 'Search', class:"btn btn-outline-success", type: "submit" %>
         <% end %>
       </form>
