@@ -1,7 +1,7 @@
 <div class="main">
   <div class="information-box">
     <div class="image-information">
-      <%= image_tag @item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 400, height: 400 %>
+      <%= image_tag @item.image, class: "show-image img-thumbnail", alt: "img-thumbnail", width: 400, height: 400 %>
       <div class="custom-comment card">
         <div class="comment-header card-header bg-transparent">Comment</div>
         <div class="comment-body card-body">
@@ -71,14 +71,14 @@
           </tr>
         </tbody>
       </table>
-    </div>
-  </div>
-  <div class="edit-delete">
-    <div class="button-container">
-      <button type="button" class="btn btn-primary">データ編集を行う</button>
-    </div>
-    <div class="button-container">
-      <button type="button" class="btn btn-outline-danger">データを削除する</button>
+      <div class="edit-delete">
+        <div class="button-container">
+          <button type="button" class="edit-btn btn btn-primary">データ編集を行う</button>
+        </div>
+        <div class="button-container">
+          <button type="button" class="delete-btn btn btn-outline-danger">データを削除する</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

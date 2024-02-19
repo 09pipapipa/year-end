@@ -185,24 +185,77 @@
   letter-spacing :0.1em;
 }
 
-.thumbnail-custom{
-  
-}
 
   /* 登録商品詳細ページ */
 
 .information-box{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: end;
 }
-.image-information{
-  
+.show-image{
+  margin: 50px 0 30px 0;
 }
+.custom-comment{
+  margin-bottom: 50px;
+}
+
+.comment-header {
+  width:400px;
+  height: 50px;
+}
+
+.comment-body{
+  width:400px;
+  height: 150px;
+}
+
+.comment-text{
+  width:400px;
+} 
 
 .item-information{
-
+  margin-bottom: 50px;
 }
 
 .custom-table{
-  width: 600px;
+  width: 550px;
 }
+
+.data-top {
+  font-size: 14px;
+  letter-spacing :0.1em;
+}
+
+.row-class{
+  line-height: 2;
+
+}
+
+.data-name {
+  letter-spacing :0.1em;
+}
+
+.data-link {
+  letter-spacing :0.1em;
+}
+
+.edit-delete {
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0 30px 0;
+  
+}
+
+.edit-btn{
+  width: 300px;
+  height: 50px;
+}
+
+.delete-btn{
+  width: 150px;
+  height: 50px;
+}
+
+
