@@ -25,7 +25,7 @@ class Item < ApplicationRecord
   end
 
   def self.ransackable_attributes(auth_object = nil)
-    ["created_at", "expansion_description", "expansion_location_id", "expansion_method_id", "id", "order_quantity", "product_name", "responsible_person", "sales_day_id", "sales_number", "stock_out_id", "updated_at", "user_id", "weather_id", "year_id"]
+    [ "product_name","year_id"]
   end
 
   def self.ransackable_associations(auth_object = nil)
