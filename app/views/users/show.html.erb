@@ -17,26 +17,6 @@
   <div class="show-container">
     <p class="show-text text-primary">2023年 販売商品</p>
     <div class="small-container">
-      <% if @items.any? { |item| item.year_id == 1 } %>
-        <div class="show-horizontal">
-          <% @items.each do |item| %>
-            <% if item.year_id == 1 %>
-              <%= link_to item_path(item.id), class:"custom-product" do %>
-                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
-                <div class="product-name">
-                  <%= item.product_name %>
-                </div>
-              <% end %>
-            <% end %>
-          <% end %>
-        </div>
-      <% else %>
-        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
-        <div class="no-image container-fluid">商品の登録がありません。</div>
-      <% end %>
-    </div>
-    <p class="show-text text-primary">2024年 販売商品</p>
-    <div class="small-container">
       <% if @items.any? { |item| item.year_id == 2 } %>
         <div class="show-horizontal">
           <% @items.each do |item| %>
@@ -55,7 +35,7 @@
         <div class="no-image container-fluid">商品の登録がありません。</div>
       <% end %>
     </div>
-    <p class="show-text text-primary">2025年 販売商品</p>
+    <p class="show-text text-primary">2024年 販売商品</p>
     <div class="small-container">
       <% if @items.any? { |item| item.year_id == 3 } %>
         <div class="show-horizontal">
@@ -75,7 +55,7 @@
         <div class="no-image container-fluid">商品の登録がありません。</div>
       <% end %>
     </div>
-    <p class="show-text text-primary">2026年 販売商品</p>
+    <p class="show-text text-primary">2025年 販売商品</p>
     <div class="small-container">
       <% if @items.any? { |item| item.year_id == 4 } %>
         <div class="show-horizontal">
@@ -95,7 +75,7 @@
         <div class="no-image container-fluid">商品の登録がありません。</div>
       <% end %>
     </div>
-    <p class="show-text text-primary">2027年 販売商品</p>
+    <p class="show-text text-primary">2026年 販売商品</p>
     <div class="small-container">
       <% if @items.any? { |item| item.year_id == 5 } %>
         <div class="show-horizontal">
@@ -115,7 +95,7 @@
         <div class="no-image container-fluid">商品の登録がありません。</div>
       <% end %>
     </div>
-    <p class="show-text text-primary">2028年 販売商品</p>
+    <p class="show-text text-primary">2027年 販売商品</p>
     <div class="small-container">
       <% if @items.any? { |item| item.year_id == 6 } %>
         <div class="show-horizontal">
@@ -135,12 +115,32 @@
         <div class="no-image container-fluid">商品の登録がありません。</div>
       <% end %>
     </div>
-    <p class="show-text text-primary">2029年 販売商品</p>
+    <p class="show-text text-primary">2028年 販売商品</p>
     <div class="small-container">
       <% if @items.any? { |item| item.year_id == 7 } %>
         <div class="show-horizontal">
           <% @items.each do |item| %>
             <% if item.year_id == 7 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+    <p class="show-text text-primary">2029年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 8 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 8 %>
               <%= link_to item_path(item.id), class:"custom-product" do %>
                 <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
                 <div class="product-name">
