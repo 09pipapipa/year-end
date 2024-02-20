@@ -194,11 +194,26 @@
   flex-wrap: wrap;
   align-items: end;
 }
-.show-image{
-  margin: 50px 0 30px 0;
+
+.show-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  font-family: 'object-fit:contain;';
 }
+
+.show-image-container {
+  margin: 50px 0 30px 0;
+  width: 400px;
+  height: 400px;
+  overflow: hidden; 
+}
+
 .custom-comment{
   margin-bottom: 50px;
+  width: 400px;
 }
 
 .comment-header {
@@ -213,6 +228,8 @@
 
 .comment-text{
   width:400px;
+  overflow-wrap: break-word;
+  padding: 8px;
 } 
 
 .item-information{

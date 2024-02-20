@@ -1,10 +1,12 @@
 <div class="main">
   <div class="information-box">
     <div class="image-information">
-      <%= image_tag @item.image, class: "show-image img-thumbnail", alt: "img-thumbnail", width: 400, height: 400 %>
+      <div class="show-image-container">
+        <%= image_tag @item.image, class: "show-image img-thumbnail", alt: "img-thumbnail" %>
+      </div>
       <div class="custom-comment card">
         <div class="comment-header card-header bg-transparent">Comment</div>
-        <div class="comment-body card-body">
+        <div class="comment-body">
           <p class="comment-text card-text"><%= @item.expansion_description %></p>
         </div>
       </div>
