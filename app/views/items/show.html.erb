@@ -73,10 +73,10 @@
       </table>
       <div class="edit-delete">
         <div class="button-container">
-          <button type="button" class="edit-btn btn btn-primary">データ編集を行う</button>
+          <%= link_to "データ編集を行う", edit_item_path,class:"edit-btn btn btn-primary" %>
         </div>
         <div class="button-container">
-          <button type="button" class="delete-btn btn btn-outline-danger">データを削除する</button>
+          <%= link_to "データを削除する", item_path(@item.id),data:{turbo_method: :delete},class:"delete-btn btn btn-outline-danger" %>
         </div>
       </div>
     </div>
