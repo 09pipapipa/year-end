@@ -18,7 +18,12 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    
+    @item = Item.find(params[:id])
+    if current_user == @item.user
+      render :edit
+    else
+      redirect_to root_path
+    end
   end
 
   def show
@@ -30,7 +35,13 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    
+    @item = Item.find(params[:id])
+    if current_user && @item.user == current_user
+      @item.destroy
+    else
+      redirect_to root_path
+    end
+    redirect_to root_path
   end
   private
 
