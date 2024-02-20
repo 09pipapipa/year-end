@@ -8,4 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  // 削除ボタン用//
+  const deleteBtn = document.getElementById("deleteBtn");
+
+  deleteBtn.addEventListener("click", function() {
+  const result = confirm("本当に削除してよろしいですか？");
+
+  if (result) {
+    window.location.href = '/';
+  }
 });
+});
+
+
+
