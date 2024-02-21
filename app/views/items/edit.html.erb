@@ -4,9 +4,9 @@
       <div class="one-selection">
         <div id="previews"></div>
         <label for="formFile" class="form-label">撮影画像を選択</label>
-        <%= f.file_field :image, id:"formFile",class:"form-control image-selection" %>
+        <%= f.file_field :image, id:"formFile",class:"image-selection form-control " %>
         <div class="form-floating">
-          <%= f.text_area :expansion_description, class:"form-control comment-selection",id:"floatingTextarea",style:"height: 100px" %>
+          <%= f.text_area :expansion_description, class:"comment-selection form-control ",id:"floatingTextarea",style:"width:500px; height:150px;" %>
           <label for="floatingTextarea">販売の動向、補充者、補充頻度など</label>
           <%= f.submit "登録する", class:"item-new-btn btn btn-outline-primary" %>
           

@@ -271,4 +271,23 @@
   align-items: center;
 }
 
+ /* 登録商品編集ページ 登録cssより引用 */
+
+.one-selection{
+  width: 500px;
+}
+#formFile-preview img  {
+  max-width: 500px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+.comment-selection {
+  max-height: 300px;
+}
+
+
+
+
 
