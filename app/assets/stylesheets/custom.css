@@ -8,6 +8,15 @@
   margin-right: 20px;
 }
 
+/* エラーメッセージ部分 */
+.error-massage{
+  width: 450px;
+  margin: 0 auto;
+}
+.error-text{
+  text-align: left;
+  list-style: circle;
+}
 
   /* ログイン部分 */
 
