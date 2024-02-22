@@ -156,8 +156,12 @@
 .two-segmentation{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: end;
+  flex-wrap: wrap;
   padding: 50px 0 50px 0;
+}
+.one-selection{
+  height: 900px;
 }
 
 
@@ -203,6 +207,11 @@
   transform: translate(75%,0);
 }
 
+@media screen and (max-width: 1140px) {
+  .one-selection {
+    height:900px;
+  }
+}
  /* 登録商品一覧ページ */
 
 .show-text{
@@ -350,7 +359,7 @@
 }
 
 .comment-selection {
-  max-height: 300px;
+  max-height: 200px;
 }
 
 
