@@ -2,6 +2,7 @@
 
 <div class="main">
   <%= form_with model:@item, url: items_path, local: true, id: "item_form" do |f| %>
+    <div class= "item-error"><%= render "devise/shared/error_messages", model: @item %></div>
     <div class="two-segmentation">
       <div class="one-selection">
         <div id="previews"></div>
