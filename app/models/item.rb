@@ -16,12 +16,12 @@ class Item < ApplicationRecord
     validates :responsible_person
     validates :order_quantity , format: { with: /\A\d+\z/ }
     validates :sales_number, format: { with: /\A\d+\z/ }
-    validates :year_id,               numericality: {other_than: 1}
-    validates :expansion_location_id ,numericality: {other_than: 1}
-    validates :weather_id,            numericality: {other_than: 1}
-    validates :expansion_method_id,   numericality: {other_than: 1}
-    validates :stock_out_id,          numericality: {other_than: 1}
-    validates :sales_day_id,          numericality: {other_than: 1}
+    validates :year_id,               numericality: {other_than: 1, message: "を選択してください"}
+    validates :expansion_location_id ,numericality: {other_than: 1, message: "を選択してください"}
+    validates :weather_id,            numericality: {other_than: 1, message: "を選択してください"}
+    validates :expansion_method_id,   numericality: {other_than: 1, message: "を選択してください"}
+    validates :stock_out_id,          numericality: {other_than: 1, message: "を選択してください"}
+    validates :sales_day_id,          numericality: {other_than: 1, message: "を選択してください"}
   end
 
   def self.ransackable_attributes(auth_object = nil)
