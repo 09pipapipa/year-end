@@ -21,8 +21,7 @@
   padding: 50px 0 0 50px;
 }
 
-  /* ログイン部分 */
-
+  /*ログイン・新規登録共通部分　*/
 .login-h1 {
   font-size: 40px;
   font-family: sans-serif;
@@ -31,6 +30,7 @@
   padding-bottom: 50px;
   border-bottom: 1px solid black;
 }
+
 .form-change {
   width: 540px;
   height: 50px;
@@ -55,6 +55,20 @@
   color: beige;
 }
 
+.custom-load{
+  text-align: left;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+.sign-in:hover {
+  opacity: 0.8;
+}
+
+.sign-btn {
+  margin-bottom: 50px;
+}
+  /* ログイン部分 */
+
 .sign-container{
   width: 100%;
   height: 600px;
@@ -73,11 +87,6 @@
   width: 540px;
   height: 400px;
 }
-
-.sign-in:hover {
-  opacity: 0.8;
-}
-
 @media screen and (max-width: 1140px) {
   .sign-left {
     height: 270px;
@@ -100,14 +109,7 @@
 .registration-right{
   width: 540px;
 }
-.custom-load{
-  text-align: left;
-  padding-bottom: 15px;
-  padding-left: 30px;
-}
-.sign-btn {
-  margin-bottom: 50px;
-}
+
 @media screen and (max-width: 1140px) {
   .sign-in {
     width: 100%;
