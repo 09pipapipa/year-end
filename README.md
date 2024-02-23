@@ -11,8 +11,8 @@ https://year-end-userid.onrender.com
 ## テスト用アカウント
 Basic認証パスワード:pipapipa
 Basic認証ID:hiro9808
-テスト用メールアドレス:abcd123@123.com
-テスト用パスワード:abcd123
+テスト用メールアドレス:abc123@123.com
+テスト用パスワード:abc123
 # 利用方法
 
 ## 商品情報登録
