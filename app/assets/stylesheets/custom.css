@@ -152,9 +152,7 @@
   width: 300px;
   margin:10px 0  50px 0;
 }
-
-/* 登録画面 */
-
+/* 登録画面・編集画面共通 */
 .two-segmentation{
   display: flex;
   justify-content: space-evenly;
@@ -163,28 +161,8 @@
   padding: 50px 0 50px 0;
 }
 .one-selection{
-  height: 900px;
-}
-
-
-.data-name {
-  font-size: 16px;
-}
-.data-selection {
-  width: 350px;
-  border: 1px solid black;
-  border-radius: 5px;
-  color:black;
-  
-}
-
-.image-selection {
   width: 500px;
-  margin-bottom: 50px;
-}
-
-.comment-selection {
-
+  height: 900px;
 }
 
 .item-new-btn {
@@ -196,9 +174,17 @@
   left: 50%;
   transform: translate(-50%,0);
   margin: 30px 0 30px 0;
+}
+.data-name {
+  font-size: 16px;
+}
+.data-selection {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color:black;
   
 }
-
 .item-back-btn {
   width: 200px;
   height: 40px;
@@ -207,6 +193,22 @@
   margin-top: 100px;
   position: absolute;
   transform: translate(75%,0);
+}
+#formFile-preview img  {
+  max-width: 500px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+.comment-selection {
+  max-height: 200px;
+}
+
+/* 登録画面 */
+.image-selection {
+  width: 500px;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1140px) {
@@ -347,25 +349,3 @@
   height: 40px;
   align-items: center;
 }
-
- /* 登録商品編集ページ 登録cssより引用 */
-
-.one-selection{
-  width: 500px;
-}
-#formFile-preview img  {
-  max-width: 500px;
-  max-height: 400px;
-  width: auto;
-  height: auto;
-}
-
-.comment-selection {
-  max-height: 200px;
-}
-
-
-
-
-
-
