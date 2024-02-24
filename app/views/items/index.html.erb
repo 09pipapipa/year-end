@@ -44,10 +44,12 @@
     </div>
     <div class="button-list">
       <div class="top-registration">
-        <%= link_to "商品のデータ登録はこちら", new_item_path, class: "btn btn-primary btn-lg moving_button" %>
+        <p class="tope-text lead">商品のデータ登録はこちら</p>
+        <%= link_to "CLICK !", new_item_path, class: "btn btn-outline-info moving-button moving-shadow" %>
       </div>
       <div class="top-listbtn">
-        <%= link_to "店舗登録商品を見たい方", user_path(current_user), class: "btn btn-primary btn-lg moving_button" %>
+        <p class="tope-text lead">店舗登録商品を見たい方はこちら</p>
+        <%= link_to "CLICK !", user_path(current_user), class: "btn btn-outline-info moving-button moving-shadow" %>
       </div>
     </div>
   </div>
