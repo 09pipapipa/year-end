@@ -64,13 +64,14 @@
   bottom: 20px;
 }
 .topb-text{
-
+  font-size: 35px;
+  font-weight: 500;
 }
 .topc-text{
-
+  font-size: 20px;
 }
 .topd-text{
-
+  font-size: 20px;
 }
 .daily-period {
   text-align:center;
