@@ -54,6 +54,24 @@
   height: 100%;
   background-color: azure;
 }
+.top-text {
+  height: 300px;
+  position: relative;
+}
+.topa-text{
+  position: absolute;
+  margin-left: 50px;
+  bottom: 20px;
+}
+.topb-text{
+
+}
+.topc-text{
+
+}
+.topd-text{
+
+}
 .daily-period {
   text-align:center;
   font-size: 20px;
@@ -80,30 +98,35 @@
   text-align: center;
 }
 
-.moving_button {
-  width: 300px;
-  margin:10px 0  50px 0;
-}
-
-.top-text {
-
-}
-.t-text{
-
-}
 .item-class{
-
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .daily-switching{
-
+  width: 350px;
+  height: 600px;
 }
 .button-list{
-
+  width: 400px;
+  height: 600px;
 }
 .top-registration{
-
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-listbtn{
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moving_button {
   
 }
