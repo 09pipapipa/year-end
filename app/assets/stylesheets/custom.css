@@ -55,24 +55,27 @@
   background-color: azure;
 }
 .top-text {
-  height: 300px;
+  height: 500px;
   position: relative;
+  background-image: url(topimage.jpg);
+  background-size: cover;
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
 }
 .topa-text{
   position: absolute;
   margin-left: 50px;
-  bottom: 20px;
+  bottom: 30px;
 }
 .topb-text{
   font-size: 35px;
   font-weight: 500;
 }
-.topc-text{
+.topc-text, .topd-text {
   font-size: 20px;
+  font-weight: 400;
 }
-.topd-text{
-  font-size: 20px;
-}
+
 .daily-period {
   text-align:center;
   font-size: 20px;
