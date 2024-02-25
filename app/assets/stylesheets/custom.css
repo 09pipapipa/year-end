@@ -7,7 +7,12 @@
 .top-login {
   margin-right: 20px;
 }
-
+/* topページ以外共通*/
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: azure;
+}
 /* エラーメッセージ部分 */
 .error-massage{
   width: 450px;
@@ -117,10 +122,10 @@
 }
 /* TOPページ部分 */
 
-.main {
+.top-main {
   width: 100%;
   height: 100%;
-  background-color: azure;
+  background-color:white;
 }
 .top-text {
   height: 500px;
@@ -147,28 +152,24 @@
 .daily-period {
   text-align:center;
   font-size: 20px;
-  background-color: azure;
+  background-color: white;
   padding-top: 30px;
   
 }
 
 .daily-product {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .daily-item {
-  width: 300px;
+  width: 350px;
   height: 300px;
   margin:50px 0 30px 0;
 }
 
 .custom-item {
-  width: 300px;
+  width: 350px;
   text-align: center;
-  background-color: azure;
+  background-color: white;
 }
 
 .item-class{
@@ -182,7 +183,7 @@
   height: 600px;
 }
 .button-list{
-  width: 400px;
+  width: 300px;
 }
 .top-registration,.top-listbtn {
     height: 300px;
@@ -211,6 +212,9 @@
 .moving-shadow:hover{
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
+
+/* top画面slick */
+
 
 /* 登録画面・編集画面共通 */
 .two-segmentation{
@@ -409,3 +413,4 @@
   height: 40px;
   align-items: center;
 }
+
