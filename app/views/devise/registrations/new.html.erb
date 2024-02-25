@@ -1,27 +1,45 @@
 <%= render "devise/shared/header" %>
 <%= form_with model: @user,url: user_registration_path,local:true do |f| %>
-  <h1 class="login-h1">新規登録</h1>
-  <div class="row mb-3">
-    <label for="store_name" class="custom-label label-change">店舗名</label>
-    <%= f.text_area :store_name, class: "form-change form-control", id: "store_name", maxlength: 10 %>
+  <h1 class="login-h1">店舗 新規登録</h1>
+  <%= render "devise/shared/error_messages", model: @user %>
+  <div class="registration-container">
+    <div class="registration-left">
+      <p class="custom-load lead">
+        店舗にメールにて送付した新規登録方法を確認して登録してください。
+      </p>
+      <p class="custom-load lead">
+        重要な作業なので、店長 ・ SVは登録前に確認をお願いいたします。
+      </p>
+      <p class="custom-load lead">
+        ※また間違えて登録してしまった場合は SV まで連絡をしてください。
+      </p>
+    </div>
+    <div class="registration-right">
+      <div class="row mb-3">
+        <label for="store_name" class="custom-label label-change">店舗名</label>
+        <%= f.text_area :store_name, class: "form-change form-control", id: "store_name", maxlength: 10 %>
+      </div>
+      <div class="row mb-3">
+        <label for="store_no" class="custom-label label-change">店舗ナンバー</label>
+        <%= f.text_area :store_no, class: "form-change form-control", id: "store_no", placeholder: "現在の店舗Noを半角数字で入力" %>
+      </div>
+      <div class="row mb-3">
+        <label for="inputEmail3" class="custom-label label-change">メールアドレス</label>
+        <%= f.email_field :email, class: "form-change form-control", id: "inputEmail3",placeholder: "店舗用アドレスを入力", autofocus:true %>
+      </div>
+      <div class="row mb-3">
+        <label for="password" class="custom-label label-change">パスワード(6文字以上)</label>
+        <%= f.password_field :password, class: "form-change form-control", id: "password", placeholder: "送付した6文字以上の半角英数字" %>
+      </div>
+      <div class="row mb-3">
+        <label for="password_confirmation" class="custom-label label-change">確認のため再度パスワードを入力</label>
+        <%= f.password_field :password_confirmation, class: "form-change form-control", id: "password_confirmation", placeholder: "同じパスワードを入力してください" %>
+      </div>
+      <div class="sign-btn">
+        <%= f.submit "新規登録", class: "sign-in" %>
+      </div>
+    </div>
   </div>
-  <div class="row mb-3">
-    <label for="store_no" class="custom-label label-change">店舗ナンバー</label>
-    <%= f.text_area :store_no, class: "form-change form-control", id: "store_no", placeholder: "現在の店舗Noを半角英数字で入力" %>
-  </div>
-  <div class="row mb-3">
-    <label for="inputEmail3" class="custom-label label-change">メールアドレス</label>
-    <%= f.email_field :email, class: "form-change form-control", id: "inputEmail3",placeholder: "店舗用アドレスを入力", autofocus:true %>
-  </div>
-  <div class="row mb-3">
-    <label for="password" class="custom-label label-change">パスワード(6文字以上)</label>
-    <%= f.password_field :password, class: "form-change form-control", id: "password", placeholder: "6文字以上の半角英数字" %>
-  </div>
-  <div class="row mb-3">
-    <label for="password_confirmation" class="custom-label label-change">確認のため再度パスワードを入力</label>
-    <%= f.password_field :password_confirmation, class: "form-change form-control", id: "password_confirmation", placeholder: "同じパスワードを入力してください" %>
-  </div>
-  <%= f.submit "新規登録", class: "sign-in" %>
 <% end %>
 
 

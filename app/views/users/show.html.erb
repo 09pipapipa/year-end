@@ -1,0 +1,159 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to "年末商戦データ入力", root_path, class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <form class="d-flex" role="search">
+        <%= search_form_for @q, url: users_path  do |f| %>
+          <%= f.text_field :product_name ,class:"form-control me-2", placeholder: 'Search', arialabel: "Search" %>
+          <%= f.submit 'Search', class:"btn btn-outline-success", type: "submit" %>
+        <% end %>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="main">
+  <div class="show-container">
+    <p class="show-text text-primary">2023年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 2 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 2 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+    <p class="show-text text-primary">2024年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 3 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 3 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+    <p class="show-text text-primary">2025年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 4 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 4 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+    <p class="show-text text-primary">2026年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 5 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 5 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+    <p class="show-text text-primary">2027年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 6 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 6 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+    <p class="show-text text-primary">2028年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 7 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 7 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+    <p class="show-text text-primary">2029年 販売商品</p>
+    <div class="small-container">
+      <% if @items.any? { |item| item.year_id == 8 } %>
+        <div class="show-horizontal">
+          <% @items.each do |item| %>
+            <% if item.year_id == 8 %>
+              <%= link_to item_path(item.id), class:"custom-product" do %>
+                <%= image_tag item.image, class: "thumbnail-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+                <div class="product-name">
+                  <%= item.product_name %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
+      <% else %>
+        <%= image_tag "no-image.png", class: "noimage-custom img-thumbnail", alt: "img-thumbnail", width: 300, height: 300 %>
+        <div class="no-image container-fluid">商品の登録がありません。</div>
+      <% end %>
+    </div>
+  </div>
+</div>

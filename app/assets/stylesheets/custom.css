@@ -8,20 +8,35 @@
   margin-right: 20px;
 }
 
+/* エラーメッセージ部分 */
+.error-massage{
+  width: 450px;
+  margin: 0 auto;
+}
+.error-text{
+  text-align: left;
+  list-style: circle;
+}
+.item-error{
+  padding: 50px 0 0 50px;
+}
 
-  /* ログイン部分 */
-
+  /*ログイン・新規登録共通部分　*/
 .login-h1 {
   font-size: 40px;
   font-family: sans-serif;
   text-align: center;
   margin: 50px 0 50px 0;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
 }
+
 .form-change {
-  width: 600px;
+  width: 540px;
   height: 50px;
   margin: auto ;
   margin-bottom: 30px;
+  max-height: 60px;
 }
 
 .custom-label{
@@ -30,23 +45,76 @@
 }
 
 .sign-in {
-  width: 600px;
+  width: 200px;
   height: 50px;
   border: 1px solid rgb(233, 220, 220);
   border-radius: 7px;
   font-size:16px;
   font-family: sans-serif;
   background-color: aqua;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,0);
   color: beige;
 }
 
+.custom-load{
+  text-align: left;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
 .sign-in:hover {
   opacity: 0.8;
 }
 
+.sign-btn {
+  margin-bottom: 50px;
+}
+  /* ログイン部分 */
+
+.sign-container{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sign-left{
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  padding-top: 10px;
+}
+.sign-right{
+  width: 540px;
+  height: 400px;
+}
+@media screen and (max-width: 1140px) {
+  .sign-left {
+    height: 270px;
+  }
+}
+
+/* 新規登録部分 */
+
+.registration-container {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.registration-left{
+  width: 600px;
+}
+.registration-right{
+  width: 540px;
+}
+
+@media screen and (max-width: 1140px) {
+  .sign-in {
+    width: 100%;
+  }
+}
 /* TOPページ部分 */
 
 .main {
@@ -142,4 +210,202 @@
 }
 .moving-shadow:hover{
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+/* 登録画面・編集画面共通 */
+.two-segmentation{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  flex-wrap: wrap;
+  padding: 50px 0 50px 0;
+}
+.one-selection{
+  width: 500px;
+  height: 900px;
+}
+
+.item-new-btn {
+  width: 500px;
+  height: 50px;
+  font-size:16px;
+  font-family: sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin: 30px 0 30px 0;
+}
+.data-name {
+  font-size: 16px;
+}
+.data-selection {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color:black;
+  
+}
+.item-back-btn {
+  width: 200px;
+  height: 40px;
+  font-size:16px;
+  font-family: sans-serif;
+  margin-top: 100px;
+  position: absolute;
+  transform: translate(75%,0);
+}
+#formFile-preview img  {
+  max-width: 500px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+.comment-selection {
+  max-height: 200px;
+}
+
+/* 登録画面 */
+.image-selection {
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1140px) {
+  .one-selection {
+    height:900px;
+  }
+}
+ /* 登録商品一覧ページ */
+
+.show-text{
+  padding: 30px 0 30px 60px;
+  font-size: larger;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing :0.1em;
+}
+
+.custom-product {
+  text-decoration: none;
+}
+
+.noimage-custom{
+  display: block;
+  margin: 0 auto;
+}
+
+.no-image{
+  text-align: center;
+  margin: 30px 0;
+  font-size: larger;
+  font-style: italic;
+  letter-spacing :0.1em;
+}
+
+.show-horizontal{
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.product-name{
+  text-align: center;
+  margin: 30px 0;
+  font-size: larger;
+  font-style: italic;
+  letter-spacing :0.1em;
+}
+
+
+  /* 登録商品詳細ページ */
+
+.information-box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.show-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  font-family: 'object-fit:contain;';
+}
+
+.show-image-container {
+  margin: 50px 0 30px 0;
+  width: 400px;
+  height: 400px;
+  overflow: hidden; 
+}
+
+.custom-comment{
+  margin-bottom: 50px;
+  width: 400px;
+}
+
+.comment-header {
+  width:400px;
+  height: 50px;
+}
+
+.comment-body{
+  width:400px;
+  height: 150px;
+}
+
+.comment-text{
+  width:400px;
+  overflow-wrap: break-word;
+  padding: 8px;
+} 
+
+.item-information{
+  margin-bottom: 50px;
+}
+
+.custom-table{
+  width: 550px;
+}
+
+.data-top {
+  font-size: 14px;
+  letter-spacing :0.1em;
+}
+
+.row-class{
+  line-height: 2;
+
+}
+
+.data-name {
+  letter-spacing :0.1em;
+}
+
+.data-link {
+  letter-spacing :0.1em;
+}
+
+.edit-delete {
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0 30px 0;
+  
+}
+
+.edit-btn{
+  width: 250px;
+  height: 40px;
+  align-items: center;
+}
+
+.delete-btn{
+  width: 150px;
+  height: 40px;
+  align-items: center;
 }

@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        store_name: 店舗名
+        store_no: 店舗ナンバー
+      item: 
+        image: 画像
+        product_name: 商品名
+        responsible_person: 担当者名
+        order_quantity: 発注数
+        sales_number: 販売数
+        year_id: 販売年
+        expansion_location_id: 展開場所
+        weather_id: 天気
+        expansion_method_id: 展開方法
+        stock_out_id: 欠品の有無
+        sales_day_id: 特売期間
+

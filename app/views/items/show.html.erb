@@ -1,0 +1,86 @@
+<div class="main">
+  <div class="information-box">
+    <div class="image-information">
+      <div class="show-image-container">
+        <%= image_tag @item.image, class: "show-image img-thumbnail", alt: "img-thumbnail" %>
+      </div>
+      <div class="custom-comment card">
+        <div class="comment-header card-header bg-transparent">Comment</div>
+        <div class="comment-body">
+          <p class="comment-text card-text"><%= @item.expansion_description %></p>
+        </div>
+      </div>
+    </div>
+    <div class="item-information">
+      <table class="custom-table table">
+        <thead>
+          <tr>
+            <th scope="col" class="data-top"></th>
+            <th scope="col" class="data-top">Data Name</th>
+            <th scope="col" class="data-top">Registration Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-class">
+            <th scope="row">1</th>
+            <td class="data-name">商品名</td>
+            <td class="data-link"><%= @item.product_name %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">2</th>
+            <td class="data-name">担当者</td>
+            <td class="data-link"><%= @item.responsible_person %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">3</th>
+            <td class="data-name">発注数</td>
+            <td class="data-link"><%= @item.order_quantity %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">4</th>
+            <td class="data-name">販売数</td>
+            <td class="data-link"><%= @item.sales_number %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">5</th>
+            <td class="data-name">販売年</td>
+            <td class="data-link"><%= "#{@item.year.name}年" %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">6</th>
+            <td class="data-name">展開場所</td>
+            <td class="data-link"><%= @item.expansion_location.name %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">7</th>
+            <td class="data-name">展開方法</td>
+            <td class="data-link"><%= @item.expansion_method.name %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">8</th>
+            <td class="data-name">欠品の有無</td>
+            <td class="data-link"><%= @item.stock_out.name %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">9</th>
+            <td class="data-name">特売日</td>
+            <td class="data-link"><%= @item.sales_day.name %></td>
+          </tr>
+          <tr class="row-class">
+            <th scope="row">10</th>
+            <td class="data-name">天気</td>
+            <td class="data-link"><%= @item.weather.name %></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="edit-delete">
+        <div class="button-container">
+          <%= link_to "データ編集を行う", edit_item_path,class:"edit-btn btn btn-primary" %>
+        </div>
+        <div class="button-container">
+          <%= link_to "データを削除する", item_path(@item.id),data:{turbo_method: :delete}, id: "deleteBtn", class: "delete-btn btn btn-outline-danger" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
