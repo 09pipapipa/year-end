@@ -122,6 +122,28 @@
   height: 100%;
   background-color: azure;
 }
+.top-text {
+  height: 500px;
+  position: relative;
+  background-image: url(topimage.jpg);
+  background-size: cover;
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+}
+.topa-text{
+  position: absolute;
+  margin-left: 50px;
+  bottom: 30px;
+}
+.topb-text{
+  font-size: 35px;
+  font-weight: 500;
+}
+.topc-text, .topd-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .daily-period {
   text-align:center;
   font-size: 20px;
@@ -146,12 +168,50 @@
 .custom-item {
   width: 300px;
   text-align: center;
+  background-color: azure;
 }
 
-.moving_button {
-  width: 300px;
-  margin:10px 0  50px 0;
+.item-class{
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+.daily-switching{
+  width: 350px;
+  height: 600px;
+}
+.button-list{
+  width: 400px;
+}
+.top-registration,.top-listbtn {
+    height: 300px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.tope-text{
+  font-size: 20px;
+  font-weight: 300;
+}
+.moving-button {
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  border-bottom: 5px solid mediumturquoise ;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+.moving-button:hover{
+  color: white;
+  border-bottom: 2px solid mediumaquamarine;
+}
+.moving-shadow:hover{
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
 /* 登録画面・編集画面共通 */
 .two-segmentation{
   display: flex;
