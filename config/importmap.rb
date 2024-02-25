@@ -7,6 +7,7 @@ pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "preview", to: "preview.js"
 pin "slide", to: "slide.js"
+pin "jquery", to: "https://ga.jspm.io/npm:jquery@3.6.3/dist/jquery.js"
 
 pin "bootstrap", to: "bootstrap.js", preload: true
 pin "@popperjs/core", to: "popper.js", preload: true
