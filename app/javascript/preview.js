@@ -1,12 +1,12 @@
-document.addEventListener('turbo:load', function(){
+document.addEventListener('DOMContentLoaded', function(){
   const itemNew = document.getElementById('item_form');
 
   const previewList = document.getElementById('previews');
 
   if (!itemNew) return null;
 
-    //input[type="file"]セレクタは、HTMLフォーム内のファイル入力フィールドをターゲットにする
-    //item[image]はitemデータのimageカラムを指す
+  //input[type="file"]セレクタは、HTMLフォーム内のファイル入力フィールドをターゲットにする
+  //item[image]はitemデータのimageカラムを指す
   const fileField = document.querySelector('input[type="file"][name="item[image]"]');
   fileField.addEventListener('change',function(e){
 
