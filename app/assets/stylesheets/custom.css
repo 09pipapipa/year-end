@@ -213,9 +213,6 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
-/* top画面slick */
-
-
 /* 登録画面・編集画面共通 */
 .two-segmentation{
   display: flex;
@@ -414,3 +411,9 @@
   align-items: center;
 }
 
+  /* preview 画像サイズ調整 */
+
+.preview-size {
+  width: 500px;
+  height: 400px;
+}
